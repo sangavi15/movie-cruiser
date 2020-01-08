@@ -23,7 +23,7 @@ public class FavoriteDaoCollectionImpl implements FavoriteDao {
         if (favorites == null || favorites.getFavoriteList().isEmpty()) {
             throw new FavoriteEmptyException();
         }
-      
+
         int total = favorites.getFavoriteList().size();
         favorites.setTotal(total);
         return favorites;
@@ -33,19 +33,18 @@ public class FavoriteDaoCollectionImpl implements FavoriteDao {
     @Override
     public void addFavoritesById(long userId, long movieId) {
         MovieDao movies = new MovieDaoCollectionImpl();
-        Movie movie = movies.getMovieById (movieId);
-        if (userFavorites.containsKey(userId)){
+        Movie movie = movies.getMovieById(movieId);
+        if (userFavorites.containsKey(userId)) {
             userFavorites.get(userId).getFavoriteList().add(movie);
-        }else {
+        } else {
             Favorite favorite = new Favorite();
             List<Movie> movielist = new ArrayList<Movie>();
             movielist.add(movie);
             favorite.setFavoriteList(movielist);
             userFavorites.put(userId, favorite);
-            
-            
+
         }
-        
+
     }
 
     @Override
