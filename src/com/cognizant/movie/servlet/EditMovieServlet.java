@@ -25,7 +25,7 @@ public class EditMovieServlet extends HttpServlet {
         String isactive = request.getParameter("active");
         String dateOfLaunch = request.getParameter("dateOfLaunch");
         String genre = request.getParameter("genre");
-        String ishasTeaser = request.getParameter(" hasTeaser");
+        String ishasTeaser = request.getParameter("hasTeaser");
 
         boolean active = false;
         boolean hasTeaser = false;

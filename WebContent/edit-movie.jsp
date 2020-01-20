@@ -63,10 +63,10 @@
             <tr>
                 <td><c:choose>
                         <c:when test="${movie.isHasTeaser()==true}">
-                            <input type="checkbox" name="hasTeaser" value="yes" checked="checked" />Has Teaser
+                            <input type="checkbox" name="hasTeaser" value="Yes" checked="checked" />Has Teaser
             </c:when>
                         <c:otherwise>
-                            <input type="checkbox" name="hasTeaser" value="no" />Has Teaser
+                            <input type="checkbox" name="hasTeaser" value="No" />Has Teaser
             </c:otherwise>
                     </c:choose></td>
 
