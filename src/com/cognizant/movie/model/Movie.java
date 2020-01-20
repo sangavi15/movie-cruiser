@@ -136,10 +136,10 @@ public class Movie {
 
     @Override
     public String toString() {
-        DecimalFormat df = new DecimalFormat();
+        DecimalFormat dateformat = new DecimalFormat();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         return String.format("%-10s%-20s%-15s%-10s%-17s%-15s%-15s", movieId, title,
-                "$" + df.format(boxOffice), (active == true ? "Yes" : "No"),
+                "$" + dateformat.format(boxOffice), (active == true ? "Yes" : "No"),
                 sdf.format(dateOfLaunch), genre, (hasTeaser == true ? "Yes" : "No"));
     }
 

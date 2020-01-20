@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +11,7 @@
         <label id="movie-cruiser">Movie Cruiser</label> <img id="image-img" src="images/logo.png"
             width="40" height="40" />
         <nav>
-            <a href="movie-list-admin.html">Movies</a>
+            <a href="ShowMovieListAdmin">Movies</a>
         </nav>
     </header>
     <label id="movie-heading">Edit Movie Status</label>

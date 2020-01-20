@@ -20,7 +20,7 @@ public class MovieDaoCollectionImpl implements MovieDao {
                     DateUtil.convertToDate("21/08/2017"), "Romance", false);
             Movie movie4 = new Movie(4, "Jurassic World", 1671713208L, false,
                     DateUtil.convertToDate("02/07/2017"), "Science Fiction", true);
-            Movie movie5 = new Movie(5, "Avengers End Game", 2750760348L, true,
+            Movie movie5 = new Movie(5, "Avengers: End Game", 2750760348L, true,
                     DateUtil.convertToDate("02/11/2022"), "Super Hero", true);
             movieList = new ArrayList<Movie>();
             movieList.add(movie1);
